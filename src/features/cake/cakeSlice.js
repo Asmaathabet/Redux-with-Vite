@@ -1,6 +1,6 @@
-import toolkit from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
-const { createSlice } = toolkit;
+// const { createSlice } = toolkit;
 
 const initialState = {
     numOfCakes: 10,
@@ -19,10 +19,13 @@ const cakeSlice = createSlice({
     },
 })
 
+
+export default cakeSlice.reducer;
+export const { ordered, restocked } = cakeSlice.actions
 // module.exports = cakeSlice.reducer
 // module.exports.cakeActions = cakeSlice.actions
 
-export default cakeSlice;
+
 // module.defult.exports = {
 //     cakeReducers: cakeSlice.reducer,
 //     cakeActions: cakeSlice.actions

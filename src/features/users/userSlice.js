@@ -1,7 +1,7 @@
-import toolkit from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios';
 
-const { createSlice, createAsyncThunk } = toolkit;
+// const { createSlice, createAsyncThunk } = toolkit;
 
 const initialState = {
     loading: true,
@@ -42,6 +42,5 @@ const userSlice = createSlice({
 
 
 
-
-export default userSlice;
+export default userSlice.reducer;
 
